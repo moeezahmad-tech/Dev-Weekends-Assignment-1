@@ -28,6 +28,8 @@ npm install
 
 Option A: Use the helper script (Windows)
 
+The script installs dependencies if `node_modules` is missing, then starts both servers.
+
 ```
 run-dev.bat
 ```
