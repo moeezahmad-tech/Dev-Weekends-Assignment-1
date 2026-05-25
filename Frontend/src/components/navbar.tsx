@@ -7,10 +7,10 @@ const Navbar = () => {
           <span>Khadya</span>
         </div>
         <nav className="site-nav__links">
-          <a href="#home">Home</a>
-          <a href="#menu">Menu</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a href="/#home">Home</a>
+          <a href="/#menu">Menu</a>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/cart">Cart</a>
         </nav>
       </div>
     </header>

@@ -62,6 +62,17 @@ async function initDb(options: InitOptions = {}): Promise<sqlite3.Database> {
     )`
   );
 
+  await run(
+    db,
+    `CREATE TABLE IF NOT EXISTS Orders (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      items TEXT NOT NULL,
+      total REAL NOT NULL,
+      status TEXT,
+      created_at TEXT
+    )`
+  );
+
   dbInstance = db;
   return db;
 }

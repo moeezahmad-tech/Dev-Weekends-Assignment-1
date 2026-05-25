@@ -14,5 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api", apiRouter);
 
 app.listen(port, () => {
-    console.log(`The Server Is live on http://localhost:${port}`);
+    console.log(`API running at http://localhost:${port}/api`);
+    console.log("Frontend dev server defaults to http://localhost:5173");
 });

@@ -1,5 +1,6 @@
 import express from "express";
 import foodRouter from "./food-item/index.ts";
+import orderRouter from "./order/index.ts";
 
 const router = express.Router();
 
@@ -12,5 +13,6 @@ router.get("/status", (req: any, res: any) => {
 });
 
 router.use("/food", foodRouter);
+router.use("/orders", orderRouter);
 
 export default router;
